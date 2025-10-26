@@ -67,6 +67,8 @@ HavaYollariTakipSistemi/
 
 
 ---
+## UML Diyagramı
+<img width="2166" height="1166" alt="Hava Yolları Takip Sistemi UML E-R Diagram" src="https://github.com/user-attachments/assets/09fb4cac-e9cc-4ce0-b151-04843552f685" />
 
 ## 🔶 Chen Notasyonu ile E-R Diyagramı
 
