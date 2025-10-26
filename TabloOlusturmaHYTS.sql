@@ -20,7 +20,7 @@ country VARCHAR(100) NOT NULL
 
 CREATE TABLE Flights(
 flight_id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-flight_number INT NOT NULL,
+flight_number VARCHAR(100) NOT NULL,
 --airplane_id INT NOT NULL,
 --departure_airport_id INT NOT NULL,
 --arrival_airport_id INT NOT NULL,
@@ -45,3 +45,4 @@ price INT NOT NULL,
 flight_id INT FOREIGN KEY  REFERENCES Flights(flight_id),
 passenger_id INT FOREIGN KEY  REFERENCES Passengers(passenger_id)
 );
+
