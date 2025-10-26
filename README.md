@@ -51,27 +51,27 @@ Veritabanı **Microsoft SQL Server** üzerinde çalışacak biçimde yazılmış
 ## 🧠 Teknolojiler
 - **Veritabanı:** SQL Server  
 - **Diyagram Aracı:** [dbdiagram.io](https://dbdiagram.io)  
-- **Notasyon:** Chen Notasyonu (aşağıda)
+- **Notasyon:** Chen Notasyonu ve UML Notasyonu
 
 ---
 
 ## 🧱 Dosya Yapısı
-HavaYollariTakipSistemi/
-│
-├── TabloOlusturmaHYTS.sql # CREATE TABLE komutları
-├── TabloEkleme.sql # Ek CREATE TABLE komutları
-├── DegerEkleme.sql # Örnek INSERT verileri
-├── test_queries.sql # Örnek SELECT sorguları
-├── diagram.dbml # dbdiagram.io diyagram kodu
-└── README.md # Bu dosya
+HavaYollariTakipSistemi/<br>
+  │<br>
+  ├── TabloOlusturmaHYTS.sql # CREATE TABLE komutları<br>
+  ├── TabloEkleme.sql # Ek CREATE TABLE komutları<br>
+  ├── DegerEkleme.sql # Örnek INSERT verileri<br>
+  ├── test_queries.sql # Örnek SELECT sorguları<br>
+  ├── diagram.dbml # dbdiagram.io diyagram kodu<br>
+  └── README.md # Bu dosya<br>
 
 
 ---
-## UML Diyagramı
+## 🔶 UML Diyagramı ile E-R Diyagramı
 <img width="2166" height="1166" alt="Hava Yolları Takip Sistemi UML E-R Diagram" src="https://github.com/user-attachments/assets/09fb4cac-e9cc-4ce0-b151-04843552f685" />
 
 ## 🔶 Chen Notasyonu ile E-R Diyagramı
 
-Chen notasyonu ilişkileri **şematik metin** olarak gösterir:  
-(A = Entity, ◉ = Relationship, → = Cardinality)
+<img width="2201" height="621" alt="Hava Yolları Takip Sistemi Chen E-R Diagram drawio (1)" src="https://github.com/user-attachments/assets/10411a68-4964-4052-80da-3dfa22906169" />
+
 
