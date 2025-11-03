@@ -41,7 +41,7 @@ CREATE TABLE Baggage(
 baggage_id INT IDENTITY(1,1) PRIMARY KEY,
 ticket_id INT NOT NULL FOREIGN KEY REFERENCES Tickets(ticket_id),
 weight DECIMAL(10,2),
-type VARCHAR(20) CHECK (type IN ('Cabin', 'Checked')),
+type VARCHAR(20) CHECK (type IN ('Cabin', 'Checked'))
 );
 
 CREATE TABLE Flight_Status(
@@ -58,6 +58,7 @@ maintenance_date DATE,
 description VARCHAR(255),
 technician_name VARCHAR(100)
 );
+
 
 
 
