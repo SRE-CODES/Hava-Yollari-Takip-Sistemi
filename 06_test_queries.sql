@@ -1,38 +1,38 @@
---uçuþ ve yolcu listesi
+--uÃ§uÃ¾ ve yolcu listesi
 SELECT f.flight_number, p.name, p.surname, t.seat_number
 FROM Flights f
 JOIN Tickets t ON f.flight_id = t.flight_id
 JOIN Passengers p ON t.passenger_id = p.passenger_id
 ORDER BY f.flight_number;
 
---uçak baþýna toplam koltuk
+--uÃ§ak baÃ¾Ã½na toplam koltuk
 SELECT a.model, COUNT(s.seat_id) AS Total_Seats
 FROM Airplanes a
 LEFT JOIN Seats s ON a.airplane_id = s.airplane_id
 GROUP BY a.model;
 
---uçak baþýna toplam bagaj aðýrlýðý
+--uÃ§ak baÃ¾Ã½na toplam bagaj aÃ°Ã½rlÃ½Ã°Ã½
 SELECT f.flight_number, SUM(b.weight) AS Total_Baggage_Weight
 FROM Flights f
 JOIN Tickets t ON f.flight_id = t.flight_id
 JOIN Baggage b ON t.ticket_id = b.ticket_id
 GROUP BY f.flight_number;
 
---uçuþ ekibi bilgileri
+--uÃ§uÃ¾ ekibi bilgileri
 SELECT f.flight_number, c.name, c.surname, c.role
 FROM Flights f
 JOIN Flight_Crew fc ON f.flight_id = fc.flight_id
 JOIN Crew c ON fc.crew_id = c.crew_id
 ORDER BY f.flight_number;
 
---ödeme bilgileri
+--Ã¶deme bilgileri
 SELECT p.name + ' ' + p.surname AS Passenger, f.flight_number, pay.amount, pay.payment_method
 FROM Payments pay
 JOIN Tickets t ON pay.ticket_id = t.ticket_id
 JOIN Passengers p ON t.passenger_id = p.passenger_id
 JOIN Flights f ON t.flight_id = f.flight_id;
 
---bakým geçmiþi
+--bakÃ½m geÃ§miÃ¾i
 SELECT al.name AS Airline, ap.model, m.maintenance_date, m.description, m.technician_name
 FROM Maintenance m
 JOIN Airplanes ap ON m.airplane_id = ap.airplane_id
